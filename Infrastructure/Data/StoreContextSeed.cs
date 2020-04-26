@@ -12,7 +12,7 @@ namespace Infrastructure.Data
 {
     public class StoreContextSeed
     {
- public static async Task SeedAsync(StoreContext context, ILoggerFactory loggerFactory)
+        public static async Task SeedAsync(StoreContext context, ILoggerFactory loggerFactory)
         {
             try
             {
@@ -83,6 +83,6 @@ namespace Infrastructure.Data
                 var logger = loggerFactory.CreateLogger<StoreContextSeed>();
                 logger.LogError(ex.Message);
             }
-        }       
+        }
     }
 }
